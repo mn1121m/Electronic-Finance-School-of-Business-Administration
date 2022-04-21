@@ -1,10 +1,12 @@
 # CH04. The Changing Structure of the Financial Ecosystem
 
 Created: 2022년 4월 21일 오전 10:30
-Last Edited Time: 2022년 4월 21일 오후 12:27
+Last Edited Time: 2022년 4월 21일 오후 2:11
 Type: 경영
 
 # CHO4. The Changing Structure of the Financial Ecosystem
+
+---
 
 ### Incumbent Collaboration with Techfins
 
