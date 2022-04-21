@@ -1,0 +1,697 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>KOR)CH02. Incumbent Financial Institutions and Their Response to Fintechs</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="6bc030ff-5528-41c0-9919-24a82411c906" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">💰</span></div><h1 class="page-title">KOR)CH02. Incumbent Financial Institutions and Their Response to Fintechs</h1><table class="properties"><tbody><tr class="property-row property-row-person"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesPerson"><path d="M9.625,10.8465 C8.91187,10.2891 8.12088,9.926 7,9.26013 L7,8.71938 C7.21175,8.47612 7.392,8.176 7.53813,7.83213 C7.94587,7.7315 8.3125,7.33425 8.3125,7 C8.3125,6.51788 8.1095,6.32713 7.8715,6.17137 C7.8715,6.15562 7.875,6.14162 7.875,6.125 C7.875,5.41362 7.4375,3.5 5.25,3.5 C3.0625,3.5 2.625,5.4145 2.625,6.125 C2.625,6.14162 2.6285,6.15562 2.6285,6.17137 C2.3905,6.32713 2.1875,6.51788 2.1875,7 C2.1875,7.33425 2.55413,7.7315 2.96187,7.833 C3.108,8.176 3.28825,8.47612 3.5,8.71938 L3.5,9.26013 C2.37912,9.92513 1.58812,10.2882 0.875,10.8465 C0.041125,11.4984 0,12.4688 0,14 L10.5,14 C10.5,12.4688 10.4589,11.4984 9.625,10.8465 Z M13.125,7.3465 C12.4119,6.78912 11.6209,6.426 10.5,5.76013 L10.5,5.21938 C10.7118,4.97613 10.892,4.676 11.0381,4.33213 C11.4459,4.2315 11.8125,3.83425 11.8125,3.5 C11.8125,3.01787 11.6095,2.82713 11.3715,2.67138 C11.3715,2.65562 11.375,2.64162 11.375,2.625 C11.375,1.91363 10.9375,0 8.75,0 C6.5625,0 6.125,1.9145 6.125,2.625 C6.125,2.64162 6.1285,2.65562 6.1285,2.67138 C6.11188,2.68275 6.09787,2.69588 6.08125,2.70725 C7.83212,3.066 8.59688,4.54825 8.72813,5.74787 C8.97575,6.00863 9.1875,6.39625 9.1875,7 C9.1875,7.60288 8.771,8.20312 8.18388,8.51462 C8.127,8.624 8.06662,8.729 8.00275,8.82962 C8.155,8.91537 8.30025,8.99675 8.44025,9.07463 C9.08075,9.4325 9.63375,9.74137 10.164,10.1561 C10.3022,10.2638 10.4204,10.3801 10.5289,10.4991 L14,10.4991 C14,8.96875 13.9589,7.99837 13.125,7.3465 Z"></path></svg></span>Participants</th><td></td></tr><tr class="property-row property-row-created_by"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCreatedBy"><path d="M13.125,10.0354 C12.5536,9.48588 10.801,8.53125 9.625,7.875 L9.625,7.04112 C9.849,6.71912 10.045,6.37 10.1911,5.98588 C10.5849,5.7435 10.9375,5.28412 10.9375,4.8125 C10.9375,4.35488 10.9323,3.94275 10.4668,3.605 C10.3049,1.5575 9.436,0 7,0 C4.564,0 3.69513,1.5575 3.53325,3.605 C3.06775,3.94275 3.0625,4.35488 3.0625,4.8125 C3.0625,5.28412 3.41513,5.7435 3.80888,5.98588 C3.955,6.37 4.151,6.71912 4.375,7.04112 L4.375,7.875 C3.199,8.53125 1.44638,9.48588 0.875,10.0354 C0.1645,10.7188 0,11.8125 0,14 L14,14 C14,11.8125 13.8364,10.7188 13.125,10.0354 Z"></path></svg></span>Created By</th><td></td></tr><tr class="property-row property-row-select"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesSelect"><path d="M7,13 C10.31348,13 13,10.31371 13,7 C13,3.68629 10.31348,1 7,1 C3.68652,1 1,3.68629 1,7 C1,10.31371 3.68652,13 7,13 Z M3.75098,5.32278 C3.64893,5.19142 3.74268,5 3.90869,5 L10.09131,5 C10.25732,5 10.35107,5.19142 10.24902,5.32278 L7.15771,9.29703 C7.07764,9.39998 6.92236,9.39998 6.84229,9.29703 L3.75098,5.32278 Z"></path></svg></span>Type</th><td><span class="selected-value select-value-color-purple">경영</span></td></tr><tr class="property-row property-row-created_time"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCreatedAt"><path d="M7.01356 14.0001C8.8042 14.0001 10.5958 13.3107 11.9575 11.9324C14.681 9.21201 14.6808 4.7603 11.9571 2.04013C9.23336 -0.680043 4.77573 -0.680043 2.05199 2.04013C0.727519 3.36277 0 5.13301 0 6.99553C0 8.8764 0.727811 10.6285 2.05199 11.9509C3.43207 13.3106 5.22243 14.0001 7.01356 14.0001ZM3.72947 7.00914V8.461V8.65543H3.92382H5.34563H8.2794H8.4738V8.461V5.52541V3.37947V3.18502H8.2794H6.82747H6.63307V3.37947V6.81467H3.92382H3.72947V7.00914ZM1.83985 6.99553C1.83985 5.61698 2.38099 4.32597 3.36061 3.3477C5.36746 1.34337 8.64803 1.34062 10.6585 3.33944C10.6613 3.34219 10.6639 3.34494 10.6668 3.3477C12.676 5.3546 12.6763 8.63642 10.6668 10.6434C8.65705 12.6504 5.37031 12.6504 3.36061 10.6434C2.38099 9.66506 1.83985 8.37408 1.83985 6.99553Z"></path></svg></span>Created</th><td><time>@2022년 4월 18일 오전 12:43</time></td></tr><tr class="property-row property-row-last_edited_time"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesCreatedAt"><path d="M7.01356 14.0001C8.8042 14.0001 10.5958 13.3107 11.9575 11.9324C14.681 9.21201 14.6808 4.7603 11.9571 2.04013C9.23336 -0.680043 4.77573 -0.680043 2.05199 2.04013C0.727519 3.36277 0 5.13301 0 6.99553C0 8.8764 0.727811 10.6285 2.05199 11.9509C3.43207 13.3106 5.22243 14.0001 7.01356 14.0001ZM3.72947 7.00914V8.461V8.65543H3.92382H5.34563H8.2794H8.4738V8.461V5.52541V3.37947V3.18502H8.2794H6.82747H6.63307V3.37947V6.81467H3.92382H3.72947V7.00914ZM1.83985 6.99553C1.83985 5.61698 2.38099 4.32597 3.36061 3.3477C5.36746 1.34337 8.64803 1.34062 10.6585 3.33944C10.6613 3.34219 10.6639 3.34494 10.6668 3.3477C12.676 5.3546 12.6763 8.63642 10.6668 10.6434C8.65705 12.6504 5.37031 12.6504 3.36061 10.6434C2.38099 9.66506 1.83985 8.37408 1.83985 6.99553Z"></path></svg></span>Last Edited Time</th><td><time>@2022년 4월 21일 오전 10:34</time></td></tr><tr class="property-row property-row-url"><th><span class="icon property-icon"><svg viewBox="0 0 14 14" style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden" class="typesUrl"><path d="M3.73333,3.86667 L7.46667,3.86667 C8.49613,3.86667 9.33333,4.70387 9.33333,5.73333 C9.33333,6.7628 8.49613,7.6 7.46667,7.6 L6.53333,7.6 C6.01813,7.6 5.6,8.0186 5.6,8.53333 C5.6,9.04807 6.01813,9.46667 6.53333,9.46667 L7.46667,9.46667 C9.5284,9.46667 11.2,7.79507 11.2,5.73333 C11.2,3.6716 9.5284,2 7.46667,2 L3.73333,2 C1.6716,2 0,3.6716 0,5.73333 C0,7.124 0.762067,8.33453 1.88953,8.97713 C1.87553,8.83107 1.86667,8.6836 1.86667,8.53333 C1.86667,7.92013 1.98753,7.33447 2.2036,6.7978 C1.99267,6.4954 1.86667,6.12953 1.86667,5.73333 C1.86667,4.70387 2.70387,3.86667 3.73333,3.86667 Z M12.1095,5.28907 C12.1231,5.4356 12.1333,5.58307 12.1333,5.73333 C12.1333,6.34607 12.0101,6.9294 11.7931,7.46513 C12.0059,7.768 12.1333,8.13573 12.1333,8.53333 C12.1333,9.5628 11.2961,10.4 10.2667,10.4 L6.53333,10.4 C5.50387,10.4 4.66667,9.5628 4.66667,8.53333 C4.66667,7.50387 5.50387,6.66667 6.53333,6.66667 L7.46667,6.66667 C7.98187,6.66667 8.4,6.24807 8.4,5.73333 C8.4,5.2186 7.98187,4.8 7.46667,4.8 L6.53333,4.8 C4.4716,4.8 2.8,6.4716 2.8,8.53333 C2.8,10.59507 4.4716,12.2667 6.53333,12.2667 L10.2667,12.2667 C12.3284,12.2667 14,10.59507 14,8.53333 C14,7.14267 13.2375,5.93167 12.1095,5.28907 Z"></path></svg></span>속성</th><td></td></tr></tbody></table></header><div class="page-body"><h1 id="6ebb2164-1155-4bb8-87d2-e4d0754be65f" class="">CHO2. 기존 금융기관과 핀테크에 대한 그들의 반응</h1><p id="58b783d0-4c72-41e3-ad45-2b329484c1ac" class="">
+</p><h3 id="6ba4e741-e8dd-41df-b494-8e49f522a851" class=""><details open=""><summary>Impediments to Incumbent Innovation</summary></details></h3><div class="indented"><p id="8021ae50-2c1c-492e-a7a7-89d652b82faf" class=""><mark class="highlight-yellow_background">왜 기존 금융기관이 혁신을 주도하지 못했는가</mark></p><ol type="1" id="d9772576-e756-411e-a26f-06fd1dbd925c" class="numbered-list" start="1"><li>예산의 3분의 2 이상이 일반적으로 노후화되고 노후화된 시스템의 유지보수에 사용되었다.</li></ol><ol type="1" id="dd7be0cb-6fca-4be0-9f66-b9331ec6bb3a" class="numbered-list" start="2"><li>내부 IT시스템을 변경하기 위한 대부분의 대규모 지출을 새로운 규정준수 및 규정요구사항을 충족하는데 전념하고 있다.</li></ol></div><p id="1f57d549-7dc7-4b45-967b-35a8bc461f67" class="">
+</p><p id="8f142a6a-d886-42ae-9472-5deee8858e79" class="">
+</p><h3 id="d07f79dc-d23b-46a1-ac54-0ab1b73b8bb1" class=""><details open=""><summary>Incumbent Financial Institutions and Their Response to Fintechs</summary></details></h3><div class="indented"><p id="971aa30d-1861-48fb-9f2c-23bf1a63b282" class=""><mark class="highlight-yellow_background">Technical debt(기술부채)</mark></p><ul id="a705ff41-aaa2-4fe1-b248-1cfd710ba82e" class="bulleted-list"><li style="list-style-type:disc">더 오래걸리고 더 나은 접근 방식을 사용하는 대신, 쉬운 해결책을 선택함으로써 발생하는 유지, 보수 비용을 암시한다.</li></ul><p id="d8e27082-e246-4399-adfd-c1c036e07ba1" class="">
+</p><p id="fdc41047-4b72-4ec7-8a88-f9934f864b3b" class=""><mark class="highlight-yellow_background">Technical debt을 기반으로 기존의 금융회사들이 혁신을 주도하지 못했는가 ?</mark></p><ul id="071820ff-9c6b-4d21-8120-8c0027f659a2" class="bulleted-list"><li style="list-style-type:disc">많은 40-50년 legacy system들이 큰 기존 금융기관들안에 많이 남아있다.<ol type="1" id="be2413fc-e891-49ee-8dfe-b94f00f758ea" class="numbered-list" start="1"><li>이러한 시스템들은 매우 안정적이며 유연성도 매우 높다. (새로운 기술들의 특성을 더하는 것은 legacy system에 많인 시간과 비용이 발생한다)</li></ol><ol type="1" id="df60f6b8-5626-4e2b-90f7-9a30631008f1" class="numbered-list" start="2"><li>많은 초기 은행들은 거의 60년전에 개발된 COBOL이라는 프로그래밍언어를 기반으로 했다. </li></ol><p id="86d0a931-7e61-4936-bf05-9424e740ff83" class="">
+</p><p id="ab4093b0-ad07-419d-ae08-76b5e3b4b57c" class="">
+</p></li></ul></div><h3 id="64e930d4-fdfe-46b3-a858-0e5d77a40b47" class=""><details open=""><summary>How Have Incumbent Financial Instructions Sought to Preserve Their Position?</summary></details></h3><div class="indented"><ol type="1" id="f68bc4cf-0039-4637-927d-94be7005ac23" class="numbered-list" start="1"><li><strong>Building / replicating fintech capabilities</strong><ul id="5bef833b-0324-4c3a-a319-c72c59ae6fb0" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">기존 금융기관들의 유리한 점 - 브랜드 이름, 고객층, 유통망</mark></li></ul><p id="180663aa-3700-4a4e-8d0c-c6090f1430d5" class="">
+</p><ul id="fee10a80-2abe-4ba6-a1ee-5d7950f60fcf" class="bulleted-list"><li style="list-style-type:disc"><strong>Zelle - 기존 금융기관들이 모여 만든 플랫폼</strong><ul id="484551ea-d643-4fec-991c-78500c5a3fa4" class="bulleted-list"><li style="list-style-type:circle">개인간 송금해주는 플랫폼</li></ul><ul id="5e72006d-9eec-49d4-ace4-4b54c5bca396" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-yellow_background">Zelle 장/단점</mark></li></ul><ul id="6c3c6b20-e717-443d-9d98-a3ea40486585" class="bulleted-list"><li style="list-style-type:circle">장점 <ul id="0cd2fb11-6fec-4eab-864a-5207dd915ed4" class="bulleted-list"><li style="list-style-type:square">수수료 발생하지 않는다.</li></ul><ul id="9e3ee80b-3123-4986-a2ae-429dc556bb32" class="bulleted-list"><li style="list-style-type:square">신속한 송금가능</li></ul><ul id="7151b1e6-7e8f-4d19-818d-6c865d5d8559" class="bulleted-list"><li style="list-style-type:square">돈을 누구에게나 쉽게 보낼 수 있다.</li></ul><ul id="9cd664a8-cc76-46c0-bb78-82d26e0b2d9a" class="bulleted-list"><li style="list-style-type:square">U.S에 있는 1000개이상의 은행과 신용조합에 이용이 가능하다.</li></ul></li></ul><ul id="ccecedd1-19a9-48b5-abb1-b07f2db59342" class="bulleted-list"><li style="list-style-type:circle">단점<ul id="563cd4b1-b8e7-44c2-8770-d0a34d01dbb3" class="bulleted-list"><li style="list-style-type:square">돈을 받으면 취소가 불가능하다.</li></ul><ul id="96eed2db-55d7-48dd-83f3-2f6a465c17eb" class="bulleted-list"><li style="list-style-type:square">Zelle기반의 자체카드가 없다.</li></ul><ul id="84b18e78-7689-4dd5-ac11-34d56e68474e" class="bulleted-list"><li style="list-style-type:square">Zelle자체 계좌잔고를 유지할 수 없다.</li></ul></li></ul><p id="845675ce-2eee-4bc9-8563-cb97dc99f36b" class="">
+</p></li></ul><ul id="c744221c-ade1-4462-a4d5-580a3d70a61f" class="bulleted-list"><li style="list-style-type:disc"><strong>Venmo - 기존의 핀테크 회사</strong><ul id="7f00a04b-6e64-4950-b163-a50ba43aa4e1" class="bulleted-list"><li style="list-style-type:circle">영화, 저녁, 이벤트 티켓 등 n빵하기 소망하는 친구들과 가족을 목적으로 만든 플랫폼</li></ul><ul id="26c393ac-40f7-405d-a702-19dfd1bd5032" class="bulleted-list"><li style="list-style-type:circle">조건)현금을 주고 받으려면 U.S에 살고 있어야한다</li></ul><ul id="766df806-fc9d-420b-b938-8995524d0949" class="bulleted-list"><li style="list-style-type:circle"><mark class="highlight-yellow_background">Venmo 장단점</mark></li></ul><ul id="f23be43d-cdc0-431b-a6eb-f3b89c49219c" class="bulleted-list"><li style="list-style-type:circle">장점(Zelle보다 유리한 점들)<ul id="2f2fadab-2231-4ddb-8034-0d8c43ed7292" class="bulleted-list"><li style="list-style-type:square">Venmo 자체 체크카드 사용가능하다.</li></ul><ul id="571dc576-3011-4755-9f3b-017cd037a3a3" class="bulleted-list"><li style="list-style-type:square">Venmo 계좌에 현금을 유지할 수 있다.</li></ul></li></ul><p id="2e5943fe-3eed-4bf5-8e6b-4265f06a3579" class="">
+</p><ul id="d02aff7a-57c5-473e-af00-66574a625c04" class="bulleted-list"><li style="list-style-type:circle">단점<ul id="37c887e1-2ae2-4f32-971b-8068e15b1111" class="bulleted-list"><li style="list-style-type:square">몇몇의 서비스에 대한 수수료가 발생한다. (Zelle는 수수료 무료)</li></ul><ul id="83609ba3-46e9-4ea9-b2b7-94da08a99f59" class="bulleted-list"><li style="list-style-type:square">수수료를 내지 않으면 돈을 바로 쓸 수 없다.</li></ul><ul id="2a41954a-56d6-4580-a9c0-a271a240be72" class="bulleted-list"><li style="list-style-type:square">이자 제공이 없다.</li></ul></li></ul></li></ul><p id="fe6ae7d1-577d-4398-958c-73754a469feb" class="">
+</p><ol type="1" id="ce2289b4-33e8-46e3-b3ad-b8877ff9f407" class="numbered-list" start="2"><li><strong><mark class="highlight-gray_background">금융기관이 핀테크 스타트업들에 투자한다.</mark></strong><ul id="30df9183-03f9-44f7-9d85-af0d607ac430" class="bulleted-list"><li style="list-style-type:disc">CVC(corporate venture capital)</li></ul><ul id="9eb68d38-69ef-4a70-a8a3-b14ba6f1a458" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">CVC  장/단점</mark><ul id="4d2a4099-626d-4fc0-a1f6-9ca11e61a090" class="bulleted-list"><li style="list-style-type:circle">장점<ul id="4d1fb836-11fb-4e00-b424-12fca88061b5" class="bulleted-list"><li style="list-style-type:square">핀테크 벤처 케피탈과 CVC의 이해관계가 다르다.<ul id="7903cbc0-efe5-44e9-869e-16e1944fd4d1" class="bulleted-list"><li style="list-style-type:disc">벤쳐 키파탈 펀드들은 순수하게 수익률로만 생각한다. </li></ul><ul id="10510bcc-f91f-4dee-9ca5-5c97e39d8669" class="bulleted-list"><li style="list-style-type:disc">CVC펀드들의 주요 목표는 수익율 외에 다른 것들(통찰력, 지적재산, 잠재적인 파트너)을 제공하는 것이다.</li></ul></li></ul></li></ul><ul id="4d5155f2-4609-4d59-bc3f-d21da42046e3" class="bulleted-list"><li style="list-style-type:circle">단점<ul id="7867c963-7aa9-4653-bc93-a88c4957f97a" class="bulleted-list"><li style="list-style-type:square">핀테크 중심의 벤처 케피탈리스트가 다수 자리를 잡고 있다. <ul id="984d0163-9a78-43b8-9b4f-b02ab9d03922" class="bulleted-list"><li style="list-style-type:disc">이들은 최고의 신흥 힌페크를 발굴하고 빠르게 투자하는데 필요한 명성, 네트워크를 구축하고 있다.</li></ul><ul id="cc088975-a31b-418e-b085-31b817b6567f" class="bulleted-list"><li style="list-style-type:disc">기존 금융기관들의 벤쳐 펀드들은 이러한 스타트업에 투자하는 위험에 대해 두려워한다.</li></ul></li></ul></li></ul></li></ul><p id="da92ff7d-74a9-4252-9d35-83b4cad52deb" class="">
+</p><ul id="e06bf5e9-522c-4fdf-9fa9-cb99386cd6e1" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">Fintech입장에서 우려되는 점</mark><ol type="1" id="d63ff9b8-6663-4ac6-843b-f2425cbf3419" class="numbered-list" start="1"><li>자심이 만든 노하우를 기존 금융기관들이 작은 돈으로 빼먹을 수 있다.</li></ol><ol type="1" id="6c39af83-5ca2-4cfb-a703-2b66bdb52313" class="numbered-list" start="2"><li>기존 금융기관의 한곳으로 부터 벤처 투자를 받은 곳은 다른 금융기관들이 그 스타트업에 투자하거나 파트너쉽을 맺는 것을 막을 수 있다.</li></ol><p id="08e36208-2d96-473f-81e1-1ff621b8b9c4" class="">
+</p></li></ul><p id="45df2519-f5c5-46c6-ba89-2d2ba234aa87" class="">
+</p><p id="e1a8cf78-4378-462b-866d-c463fc18b5c1" class="">
+</p></li></ol><ol type="1" id="cac31ad5-0d24-4cea-867e-da27504558c4" class="numbered-list" start="3"><li><mark class="highlight-gray_background"><strong>핀테크 스타트업들과 파트너쉽을 맺는다.</strong></mark><ul id="862f4cba-b796-4bc4-80b8-2ffdaa03e2cb" class="bulleted-list"><li style="list-style-type:disc"><mark class="highlight-yellow_background">기존의 금융기관들이 핀테크와 파트너쉽을 맺을 때, 좋은 분야가 small bussiness-focused fintech lender인 이유는 무엇인가 ? </mark><ul id="62d974c8-d565-4fbf-b8f1-97cc2293a198" class="bulleted-list"><li style="list-style-type:circle">큰 incumbent들은 소액대출에 대한 상대적으로 높은 인수 비용때문에 수익성 목표달성에 어려움을 겪는다.</li></ul><ul id="39d9a3d3-ae8b-4494-a904-8fae1f505c56" class="bulleted-list"><li style="list-style-type:circle">기존 incumbent의 규모와 스타트업의 대출 인수 역량과 함께 낮은 자본 비용을 결합하는 것이 파트너쉽의 목표이다.</li></ul></li></ul></li></ol><p id="05b73394-fdca-493b-95d1-92138a4a6efd" class="">
+</p></li></ol></div><p id="be6adc89-7849-4d7e-92b6-41662906ade0" class="">
+</p><p id="473c4b89-1060-4576-8a68-7996706bf543" class="">
+</p><p id="21ea8386-71eb-48f4-b126-8740fb09d76a" class="">
+</p><p id="73efd01a-d16f-4153-87bc-eb1c40a10423" class="">
+</p><p id="afa54b16-3229-486d-9c63-b0ba8868ed82" class="">
+</p><p id="043128c1-3c6e-4451-b205-f4f12f807d1b" class="">
+</p><p id="3a5d13bf-d142-4b96-a9ae-1529e40dd9a5" class="">
+</p><p id="78240865-9861-428a-94e1-6ce32d7d9860" class="">
+</p><p id="0971d310-db7a-4817-8195-3bdede3dca72" class="">
+</p><p id="d7c568b5-d356-485f-88dc-abb96072baa0" class="">
+</p><p id="803ad7ad-a825-4f6b-869e-2e9871e4eb9c" class="">
+</p><p id="3a6319be-3297-4127-841e-e5ddca430d0e" class="">
+</p><p id="da88bf66-8a39-4fc3-b532-a4494d7d89cd" class="">
+</p></div></article></body></html>
