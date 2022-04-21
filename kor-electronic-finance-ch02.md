@@ -1,8 +1,6 @@
 # KOR)CH02. Incumbent Financial Institutions and Their Response to Fintechs
 
-Created: 2022년 4월 18일 오전 12:43
-Last Edited Time: 2022년 4월 21일 오전 10:34
-Type: 경영
+
 
 # CHO2. 기존 금융기관과 핀테크에 대한 그들의 반응
 
