@@ -15,7 +15,7 @@ Type: 경영
 
 ## **Cryptography - 잘못된 예시**
 
-![스크린샷 2022-05-01 오후 7.24.58.png](CH07%20Cryptography%206d96a2c4e8cf4431b6d9892213072f19/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-05-01_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_7.24.58.png)
+<img width="600" alt="스크린샷 2022-05-01 오후 8 31 34" src="https://user-images.githubusercontent.com/83820185/166143950-62d7b99d-e20f-4eab-865e-f6fbfd72c110.png">
 
 ---
 
@@ -43,7 +43,7 @@ Type: 경영
 
 ## **Symmetric Encryption - 그림**
 
-![스크린샷 2022-05-01 오후 7.35.03.png](CH07%20Cryptography%206d96a2c4e8cf4431b6d9892213072f19/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-05-01_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_7.35.03.png)
+<img width="550" alt="스크린샷 2022-05-01 오후 8 33 34" src="https://user-images.githubusercontent.com/83820185/166144036-be658f6c-aa75-401d-acf8-9db9d22b92cf.png">
 
 ---
 
@@ -59,7 +59,8 @@ Type: 경영
 
 ## **Asymmetric Encryption - 그림**
 
-![스크린샷 2022-05-01 오후 7.40.49.png](CH07%20Cryptography%206d96a2c4e8cf4431b6d9892213072f19/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-05-01_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_7.40.49.png)
+<img width="550" alt="스크린샷 2022-05-01 오후 8 33 20" src="https://user-images.githubusercontent.com/83820185/166144046-97992fe4-a5a5-413b-a77f-9d96914a329b.png">
+
 
 ---
 
@@ -148,8 +149,8 @@ the signer to authenticate their identity using a certified digital ID
 
 - Here, you encrypt data with private key and decrypt it with a public key.
     
-    ![스크린샷 2022-05-01 오후 8.19.13.png](CH07%20Cryptography%206d96a2c4e8cf4431b6d9892213072f19/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2022-05-01_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_8.19.13.png)
-    
+    <img width="500" alt="스크린샷 2022-05-01 오후 8 35 15" src="https://user-images.githubusercontent.com/83820185/166144068-c8e1ec8b-118d-47fd-97ff-3dda052ae75f.png">
+
 
 ---
 
