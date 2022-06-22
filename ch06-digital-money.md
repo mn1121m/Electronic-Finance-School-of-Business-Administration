@@ -1,12 +1,7 @@
 # CH06. Digital Money
 
-Created: 2022년 4월 21일 오후 12:51
-Last Edited Time: 2022년 4월 21일 오후 2:11
-Type: 경영
-
-# CH06. Digital Money
-
 ---
+
 
 ### How Are Interbank Payments Made?
 
