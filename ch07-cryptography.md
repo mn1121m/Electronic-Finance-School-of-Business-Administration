@@ -1,10 +1,9 @@
 # CH07. Cryptography
 
-Created: 2022년 5월 1일 오후 7:22
-Last Edited Time: 2022년 5월 1일 오후 8:28
-Type: 경영
+---
 
 ## Cryptography
+
 
 - **Cryptography** - eng) The practice and study of techniques for secure communication in the presence of adversarial behavior
 - kor)위험한 상황에서 메세지를 안전하게 보내기 위한 기술에 대한 연구
@@ -15,7 +14,7 @@ Type: 경영
 
 ## **Cryptography - 잘못된 예시**
 
-<img width="600" alt="스크린샷 2022-05-01 오후 8 31 34" src="https://user-images.githubusercontent.com/83820185/166143950-62d7b99d-e20f-4eab-865e-f6fbfd72c110.png">
+<img width="600" alt="스크린샷 2022-06-11 오후 7 56 20" src="https://user-images.githubusercontent.com/83820185/173316824-904c1869-7bac-49f9-b2d0-8cfdec460b2b.png">
 
 ---
 
@@ -43,7 +42,7 @@ Type: 경영
 
 ## **Symmetric Encryption - 그림**
 
-<img width="550" alt="스크린샷 2022-05-01 오후 8 33 34" src="https://user-images.githubusercontent.com/83820185/166144036-be658f6c-aa75-401d-acf8-9db9d22b92cf.png">
+<img width="600" alt="스크린샷 2022-06-11 오후 7 56 53" src="https://user-images.githubusercontent.com/83820185/173316925-33a8c74e-541b-4d8d-9bc9-91e4bb01a18f.png">
 
 ---
 
@@ -59,8 +58,7 @@ Type: 경영
 
 ## **Asymmetric Encryption - 그림**
 
-<img width="550" alt="스크린샷 2022-05-01 오후 8 33 20" src="https://user-images.githubusercontent.com/83820185/166144046-97992fe4-a5a5-413b-a77f-9d96914a329b.png">
-
+<img width="600" alt="스크린샷 2022-06-11 오후 7 57 05" src="https://user-images.githubusercontent.com/83820185/173316984-353d1a2f-180f-4d7d-8a1e-ad9d4cc6c9b0.png">
 
 ---
 
