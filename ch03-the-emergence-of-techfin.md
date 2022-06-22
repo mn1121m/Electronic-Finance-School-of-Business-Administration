@@ -1,11 +1,5 @@
 # CH03. The Emergence of Techfin
 
-Created: 2022년 4월 21일 오전 10:25
-Last Edited Time: 2022년 4월 21일 오후 2:11
-Type: 경영
-
-# KOR) CH03. Techfin의 출현
-
 ---
 
 ### The Emergence of Techfin
